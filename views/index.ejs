@@ -23,11 +23,22 @@
     <!-- Custom Theme Style -->
     <link href="build/css/custom.min.css" rel="stylesheet">
 
+    <!-- Leaflet -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/leaflet.css">
+    <script src="javascripts/leaflet-src.js"></script>
+    <script src="javascripts/leaflet.js"></script>
+
     <!-- Custom Style Modifications -->
     <link rel="stylesheet" type="text/css" href="stylesheets/customStyleModifications.css">
+
   </head>
 
   <body class="nav-md">
+  
+    <!-- Bind Label Leaflet Library -->
+    <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-label/v0.2.1/leaflet.label.js'></script>
+    <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-label/v0.2.1/leaflet.label.css' rel='stylesheet' />
+
     <div class="container body">
       <div class="main_container">
         <div class="col-md-3 left_col">
@@ -85,7 +96,7 @@
                 </ul>
               </div>
             </div>  
-            <!-- /sidebar menu
+            <!-- /sidebar menu -->
 
             <!-- /menu footer buttons -->
             <div class="sidebar-footer hidden-small">
@@ -175,7 +186,7 @@
           </div>
           <!-- /top tiles -->
 
-          <div class="row">
+          <!-- <div class="row">
             <div class="col-md-12 col-sm-12 col-xs-12" id="mapContainer">
               <div class="dashboard_graph">
 
@@ -247,12 +258,22 @@
             </div>
 
           </div>
-          <br />
+
+          <br /> -->
+
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <div class="x_panel tile"  id="mapContainer">
+                <div id="mapid">
+                </div>
+              </div>
+            </div>
+          </div>  
 
           <div class="row">
 
 
-            <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="col-md-6 col-sm-6 col-xs-12">
               <div class="x_panel tile fixed_height_320">
                 <div class="x_title">
                   <h2>App Versions</h2>
@@ -361,7 +382,7 @@
               </div>
             </div>
 
-            <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="col-md-6 col-sm-6 col-xs-12">
               <div class="x_panel tile fixed_height_320 overflow_hidden">
                 <div class="x_title">
                   <h2>Device Usage</h2>
@@ -443,7 +464,7 @@
 
           </div>
 
-            <div class="col-md-8 col-sm-8 col-xs-12">
+           <!--  <div class="col-md-8 col-sm-8 col-xs-12">
 
 
 
@@ -507,7 +528,7 @@
                 </div>
 
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
         <!-- /page content -->
@@ -635,6 +656,7 @@
         }
       });
     </script>
+
     <!-- /Flot -->
 
     <!-- jVectorMap -->
@@ -805,5 +827,8 @@
       gauge.setTextField(document.getElementById("gauge-text"));
     </script>
     <!-- /gauge.js -->
+
+    <!-- Leaflet Map JS -->
+    <script src="javascripts/leafletMap.js"></script>
   </body>
 </html>
