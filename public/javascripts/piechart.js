@@ -108,7 +108,7 @@ function markerOnClickPieChart(e) {
                     "fontSize": 11
                 },
                 "lines": {
-                    "enabled": false,
+                    "enabled": true,
                     "color": "#777777"
                 },
                 "truncation": {
