@@ -38,6 +38,11 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
     <script src="javascripts/d3pie.min.js"></script>
 
+    <!-- Adding the Instructional Tour -->
+    <link href="stylesheets/bootstrap-tour-standalone.min.css" rel="stylesheet">
+    <script src="vendors/jquery/dist/jquery.min.js"></script>
+    <script src="javascripts/bootstrap-tour-standalone.min.js"></script>
+
   </head>
 
   <body class="nav-md">
@@ -66,7 +71,7 @@
                   <li><a><i class="fa fa-leaf"></i> About Us <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
                       <li><a href="about">Goals</a></li>
-                      <li><a href="index2.html">How It Works</a></li>
+                      <li><a href="navigation">How It Works</a></li>
                     </ul>
                   </li>
                   <li><a><i class="fa fa-pie-chart"></i> Visualizations <span class="fa fa-chevron-down"></span></a>
@@ -252,5 +257,28 @@
 
     <!-- Leaflet Map JS -->
     <script src="javascripts/leafletMap.js"></script>
+
+    <!-- Instructional Tour -->
+      <script>
+      var tour = new Tour({
+    steps: [
+    {
+      element: "#sidebar-menu",
+      title: "Title of my step",
+      content: "Content of my step"
+    },
+    {
+      element: "#menu_toggle",
+      title: "Title of my step",
+      content: "Content of my step"
+    }
+  ]});
+
+  // Initialize the tour
+  tour.init();
+
+  // Start the tour
+  tour.start();
+    </script>
   </body>
 </html>
