@@ -28,6 +28,7 @@ app.use('/navigation', routes);
 app.use('/splash', routes);
 app.use('/users', users);
 app.use('/testPie', routes);
+app.use('/original', routes);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
