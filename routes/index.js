@@ -18,4 +18,8 @@ router.get('/splash', function(req, res, next) {
   res.render('splash', { title: 'Express' });
 });
 
+router.get('/original', function(req, res, next) {
+  res.render('indexOriginal');
+});
+
 module.exports = router;
