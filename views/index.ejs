@@ -32,8 +32,9 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/customStyleModifications.css">
 
     <!-- Adding the Instructional Tour -->
-    <link href="bootstrap-tour.min.css" rel="stylesheet">
-    <script src="bootstrap-tour.min.js"></script>
+    <link href="stylesheets/bootstrap-tour-standalone.min.css" rel="stylesheet">
+    <script src="vendors/jquery/dist/jquery.min.js"></script>
+    <script src="javascripts/bootstrap-tour-standalone.min.js"></script>
 
   </head>
 
@@ -836,5 +837,28 @@
 
     <!-- Leaflet Map JS -->
     <script src="javascripts/leafletMap.js"></script>
+
+    <!-- Instructional Tour -->
+      <script>
+      var tour = new Tour({
+    steps: [
+    {
+      element: "#sidebar-menu",
+      title: "Title of my step",
+      content: "Content of my step"
+    },
+    {
+      element: "#menu_toggle",
+      title: "Title of my step",
+      content: "Content of my step"
+    }
+  ]});
+
+  // Initialize the tour
+  tour.init();
+
+  // Start the tour
+  tour.start();
+    </script>
   </body>
 </html>
