@@ -1,3 +1,23 @@
+@font-face {
+    font-family: Geosans_Light;
+    src: url('../../build/fonts/GeosansLight.ttf');
+}
+
+@font-face {
+    font-family: Caviar_Dreams;
+    src: url('../../build/fonts/CaviarDreams.ttf');
+}
+
+@font-face {
+    font-family: Roboto_Thin;
+    src: url('../../build/fonts/Roboto-Thin.ttf');
+}
+
+@font-face {
+    font-family: BacktoBlack;
+    src: url('../../build/fonts/Back_to_black.ttf');
+}
+
 #mapContainer  {
 	height: 400px;
 	padding-bottom: 0px;
@@ -8,4 +28,30 @@
 
 #mapid {
 	height:100%;
+}
+
+body {
+    color: #73879C;
+    background: #2A3F54;
+    font-family: "Helvetica Neue", Roboto, Arial, "Droid Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.471
+}
+
+.site_title{
+	font-family: 'BacktoBlack', Back_to_black;
+	font-size: 45px;
+	padding-left: 45px;
+	padding-top: 6px;
+	height: 75px;
+
+}
+
+#chartContainer  {
+    height: 500px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
 }

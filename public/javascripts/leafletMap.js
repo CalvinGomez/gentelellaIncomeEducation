@@ -6,10 +6,10 @@
             accessToken: 'pk.eyJ1IjoiYXByYXRobmEiLCJhIjoiY2lva3R0dTBkMDAzYXU2bTA3bXVjdXpvZSJ9.vnChROM_wM-N55VCqPJRTg'
         }).addTo(mymap);
 
-		    var carlsbadMarker = L.marker([33.1581, -117.3506]).on('click', altOnClick).bindLabel('Carlsbad').addTo(mymap);
+	    var carlsbadMarker = L.marker([33.1581, -117.3506]).on('click', altOnClick).bindLabel('Carlsbad').addTo(mymap);
         carlsbadMarker.id = "Carlsbad";
 
-		    var laJollaMarker = L.marker([32.8328, -117.2713]).on('click', altOnClick).bindLabel('La Jolla').addTo(mymap);
+	    var laJollaMarker = L.marker([32.8328, -117.2713]).on('click', altOnClick).bindLabel('La Jolla').addTo(mymap);
         laJollaMarker.id = "La Jolla";
 
         var ramonaMarker = L.marker([33.0414, -116.8793]).on('click', altOnClick).bindLabel('Ramona').addTo(mymap);
@@ -136,5 +136,5 @@
         {
                 console.log(e.target.id);
                 // markerOnClickBarChart(e.target.id);
-                // markerOnClickPieChart(e.target.id);
+                markerOnClickPieChart(e.target.id);
         }
