@@ -61,13 +61,13 @@
               <div class="menu_section">
              <!--    <h3>General</h3> -->
                 <ul class="nav side-menu">
-                  <li><a><i class="fa fa-leaf"></i> About Us <span class="fa fa-chevron-down"></span></a>
+                  <li><a id="step1"><i class="fa fa-leaf"></i> About Us <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
                       <li><a href="about">Goals</a></li>
                       <li><a href="navigation">How It Works</a></li>
                     </ul>
                   </li>
-                  <li><a><i class="fa fa-pie-chart"></i> Visualizations <span class="fa fa-chevron-down"></span></a>
+                  <li><a id="step2"><i class="fa fa-pie-chart"></i> Visualizations <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
                       <li><a href="form.html">Pie Chart</a></li>
                       <li><a href="form_advanced.html">Bubble Graph</a></li>
@@ -257,12 +257,12 @@
       var tour = new Tour({
     steps: [
     {
-      element: "#menu_toggle",
+      element: "#step1",
       title: "Title of my step",
       content: "Content of my step"
     },
     {
-      element: "#sidebar-menu",
+      element: "#s",
       title: "Title of my step",
       content: "Content of my step"
     }
