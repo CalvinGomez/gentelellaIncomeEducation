@@ -61,18 +61,22 @@
               <div class="menu_section">
              <!--    <h3>General</h3> -->
                 <ul class="nav side-menu">
-                  <li><a id="step1"><i class="fa fa-leaf"></i> About Us <span class="fa fa-chevron-down"></span></a>
+                  <div id="step1">
+                  <li><a><i class="fa fa-leaf"></i> About Us <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
                       <li><a href="about">Our Goal</a></li>
                       <li><a href="navigation">How It Works</a></li>
                     </ul>
                   </li>
-                  <li><a id="step2"><i class="fa fa-pie-chart"></i> Visualizations <span class="fa fa-chevron-down"></span></a>
+                </div>
+                <div id="step2">
+                  <li><a><i class="fa fa-pie-chart"></i> Visualizations <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
                       <li><a href="form.html">Pie Chart</a></li>
                       <li><a href="form_advanced.html">Bubble Graph</a></li>
                     </ul>
                   </li>
+                </div>  
         <!--            <li><a><i class="fa fa-desktop"></i> UI Elements <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
                       <li><a href="general_elements.html">General Elements</a></li>
@@ -262,7 +266,7 @@
       content: "Content of my step"
     },
     {
-      element: "#s",
+      element: "#step2",
       title: "Title of my step",
       content: "Content of my step"
     }
