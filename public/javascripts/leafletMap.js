@@ -5,6 +5,15 @@
             id: 'aprathna.078og2ep',
             accessToken: 'pk.eyJ1IjoiYXByYXRobmEiLCJhIjoiY2lva3R0dTBkMDAzYXU2bTA3bXVjdXpvZSJ9.vnChROM_wM-N55VCqPJRTg'
         }).addTo(mymap);
+        mymap.scrollWheelZoom.disable();
+        mymap.on('click', function() {
+            if (mymap.scrollWheelZoom.enabled()) {
+                mymap.scrollWheelZoom.disable();
+            }
+            else {
+                mymap.scrollWheelZoom.enable();
+            }
+        });
 
 	    var carlsbadMarker = L.marker([33.1581, -117.3506]).on('click', altOnClick).bindLabel('Carlsbad').addTo(mymap);
         carlsbadMarker.id = "Carlsbad";
