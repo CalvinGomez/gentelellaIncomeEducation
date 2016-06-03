@@ -133,8 +133,12 @@
           alert("hi. you clicked the marker at " + e.latlng);
         }
         function altOnClick(e)
+
         {
                 $("#pieChart").empty();
+                $("#city").empty();
+                $("#city").html(e.target.id);
+
                 console.log(e.target.id);
                 // markerOnClickBarChart(e.target.id);
                 markerOnClickPieChart(e.target.id);
