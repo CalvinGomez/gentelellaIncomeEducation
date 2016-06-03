@@ -134,6 +134,7 @@
         }
         function altOnClick(e)
         {
+                $("#pieChart").empty();
                 console.log(e.target.id);
                 // markerOnClickBarChart(e.target.id);
                 markerOnClickPieChart(e.target.id);

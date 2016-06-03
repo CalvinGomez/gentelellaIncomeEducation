@@ -2,6 +2,7 @@
  * Created by arnoldchen on 5/30/16.
  */
 function markerOnClickPieChart(e) {
+
     $.getJSON("data/education.json", function (json) {
         var updateObject=$.grep(json, function (item) {
             return item.Area == e;
