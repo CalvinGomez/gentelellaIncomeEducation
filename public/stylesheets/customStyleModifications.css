@@ -30,21 +30,83 @@
 	height:100%;
 }
 
+/*general color and stuff*/
 body {
     color: #73879C;
-    background: #2A3F54;
+    background: #424D59;
     font-family: "Helvetica Neue", Roboto, Arial, "Droid Sans", sans-serif;
     font-size: 13px;
     font-weight: 400;
     line-height: 1.471
 }
 
+/*footer color*/
+.sidebar-footer {
+    background: #424D59;
+}
+
+/*sidebar color*/
+.left_col {
+    background: #424D59
+}
+
+/*sidebar option colors - lightest to darkest*/
+.nav.side-menu>li.active>a {
+    background: linear-gradient(#4F5D6B, #495663), #424D59;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 1px 0, inset rgba(255, 255, 255, 0.16) 0 1px 0
+}
+
+.nav-md ul.nav.child_menu li:before {
+    background: #9AFFD0;
+}
+
+/*sidebar color*/
+.nav_menu {
+    float: left;
+    background: #EDEDED;
+    border-bottom: 1px solid #D9DEE4;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 57px;
+    position: relative;
+}
+
+/*logo font*/
 .site_title{
 	font-family: 'BacktoBlack', Back_to_black;
 	font-size: 45px;
 	padding-left: 45px;
 	padding-top: 6px;
 	height: 75px;
+	background: #424D59;
+
+}
+
+/*scrollbar colo*/
+.nav.side-menu>li.current-page, .nav.side-menu>li.active {
+    border-right: 5px solid #83D9B1;
+}
+
+/*help icon box coloring*/
+.sidebar-footer a {
+    background: #424D59;
+}
+.sidebar-footer a:hover {
+    background: #495663;
+}
+
+
+/*help icon color*/
+a {
+    color: #fff;
+}    
+
+a:focus, a:hover {
+    color: #83D9B1;
+}
+
+#menu_toggle{
+	color: #83D9B1;
 
 }
 

@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Pave the Way</title>
+    <title>Mint</title>
 
     <!-- Bootstrap -->
     <link href="vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -19,25 +19,20 @@
     <link href="vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
     <!-- jVectorMap -->
     <link href="stylesheets/maps/jquery-jvectormap-2.0.3.css" rel="stylesheet"/>
-
     <!-- Custom Theme Style -->
     <link href="build/css/custom.min.css" rel="stylesheet">
-
     <!-- Leaflet -->
     <link rel="stylesheet" type="text/css" href="stylesheets/leaflet.css">
     <script src="javascripts/leaflet-src.js"></script>
     <script src="javascripts/leaflet.js"></script>
-
     <!-- Pie Chart -->
     <link rel="stylesheet" type="text/css" href="stylesheets/piechart.css">
     <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
     <script src="javascripts/d3pie.min.js"></script>
-
     <!-- Adding the Instructional Tour -->
     <link href="stylesheets/bootstrap-tour-standalone.min.css" rel="stylesheet">
     <script src="vendors/jquery/dist/jquery.min.js"></script>
     <script src="javascripts/bootstrap-tour-standalone.min.js"></script>
-
     <!-- Custom Style Modifications -->
     <link rel="stylesheet" type="text/css" href="stylesheets/customStyleModifications.css">
 
@@ -78,13 +73,13 @@
               <div class="menu_section">
              <!--    <h3>General</h3> -->
                 <ul class="nav side-menu">
-                  <li><a id="step1"><i class="fa fa-home"></i> About Us <span class="fa fa-chevron-down"></span></a>
+                  <li><a id="step1"><i class="fa fa-leaf"></i> About Us <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                      <li><a href="index.html">Goals</a></li>
-                      <li><a href="index2.html">How It Works</a></li>
+                      <li><a href="about">Goals</a></li>
+                      <li><a href="navigation">How It Works</a></li>
                     </ul>
                   </li>
-                  <li><a id="step2"><i class="fa fa-edit"></i> Visualizations <span class="fa fa-chevron-down"></span></a>
+                  <li><a id="step2"><i class="fa fa-pie-chart"></i> Visualizations <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
                       <li><a href="form.html">Pie Chart</a></li>
                       <li><a href="form_advanced.html">Bubble Graph</a></li>
@@ -110,7 +105,7 @@
 
             <!-- /menu footer buttons -->
             <div class="sidebar-footer hidden-small">
-              <a data-toggle="tooltip" data-placement="top" title="Settings">
+              <a data-toggle="tooltip" data-placement="top" title="Help">
                 <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
               </a>
             <!--   <a data-toggle="tooltip" data-placement="top" title="FullScreen">
@@ -135,7 +130,7 @@
                 <a id="menu_toggle"><i class="fa fa-bars"></i></a>
               </div>
 
-              <ul class="nav navbar-nav navbar-right">
+              <!-- <ul class="nav navbar-nav navbar-right">
                 <li class="">
                   <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                     <img src="images/img.jpg" alt="">John Doe
@@ -143,7 +138,7 @@
                   </a>
                   <ul class="dropdown-menu dropdown-usermenu pull-right">
                     <li><a href="javascript:;"> suh mah fuh dih bih</a></li>
-                    <!-- <li>
+                    <! <li>
                       <a href="javascript:;">
                         <span class="badge bg-red pull-right">50%</span>
                         <span>Settings</span>
@@ -153,7 +148,7 @@
                     <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li> -->
                   </ul>
                 </li>
-              </ul>
+              </ul> 
             </nav>
           </div>
         </div>
@@ -596,11 +591,7 @@
     <script src="vendors/Flot/jquery.flot.time.js"></script>
     <script src="vendors/Flot/jquery.flot.stack.js"></script>
     <script src="vendors/Flot/jquery.flot.resize.js"></script>
-    <!-- Flot plugins -->
-    <!--<script src="javascripts/flot/jquery.flot.orderBars.js"></script>
-    <script src="javascripts/flot/date.js"></script>
-    <script src="javascripts/flot/jquery.flot.spline.js"></script>
-    <script src="javascripts/flot/curvedLines.js"></script> -->
+  
     <!-- jVectorMap -->
     <script src="javascripts/maps/jquery-jvectormap-2.0.3.min.js"></script>
     <!-- bootstrap-daterangepicker -->
@@ -620,16 +611,22 @@
           steps: [
           {
             element: "#step1",
-            title: "Title of my step",
-            content: "Content of my step"
+            title: "Learn about us here!",
+            content: "Click on the tab to drop down to more options."
           },
           {
             element: "#step2",
-            title: "Title of my step",
-            content: "Content of my step"
+            title: "See our visualizations here!",
+            content: "Same shit really."
           }
-        ]});
+        ]
+        ,
 
+          backdrop: true,
+          backdropContainer: 'body',
+          backdropPadding: 0,
+
+        });
         // Initialize the tour
         tour.init();
 
