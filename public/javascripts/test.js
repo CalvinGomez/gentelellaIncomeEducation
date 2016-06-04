@@ -66,7 +66,7 @@ function markerOnClickBarChart(e) {
             console.log( updateObject);
             if (updateObject.length==0){
 
-                svg = d3.select("#sidebar")
+                svg = d3.select("#barChart")
 
                     .append("svg")
                     .attr("width", w)
@@ -91,7 +91,7 @@ function markerOnClickBarChart(e) {
 
             }
 
-            svg = d3.select("#sidebar")
+            svg = d3.select("#barChart")
                 .append("svg")
                 .attr("width", w)
                 .attr("height", h+70+20)

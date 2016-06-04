@@ -151,4 +151,5 @@
                 console.log(e.target.id);
                 // markerOnClickBarChart(e.target.id);
                 markerOnClickPieChart(e.target.id);
+                markerOnClickBarChart(e.target.id);
         }
