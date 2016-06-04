@@ -31,8 +31,8 @@ function markerOnClickBarChart(e) {
 
     $("svg").remove();
     i++;
-    var w = 400;
-    var h = 300-70-20;
+    var w = 560;
+    var h = 300-70-20+150;
     var barPadding = 1;
     var svg = null;
     var x = d3.scale.ordinal()
@@ -166,13 +166,13 @@ function markerOnClickBarChart(e) {
                 .attr("y", function (d) {
                     return h-Math.floor(d / n);  //Height minus data value
                 })
-                .attr("width", 50)
+                .attr("width", 70)
                 .attr("height", function (d, i) {
                     return Math.floor(d /n);
                 })
                 .attr("fill", "black")
                 .attr("x", function (d, i) {
-                    return i * 51;  //Bar width of 20 plus 1 for padding
+                    return i * 71;  //Bar width of 20 plus 1 for padding
                 });
             svg.selectAll("newtext")
                 .data(c)
@@ -182,7 +182,7 @@ function markerOnClickBarChart(e) {
                     return d[1];
                 })
                 .attr("x", function (d, i) {
-                    return i * 51 + 10;  //Bar width of 20 plus 1 for padding
+                    return i * 71 + 10;  //Bar width of 20 plus 1 for padding
                 })
                 .attr("y", function (d) {
                     return h-Math.floor(d[0] / n) + 10;
