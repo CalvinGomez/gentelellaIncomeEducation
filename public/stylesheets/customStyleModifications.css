@@ -134,3 +134,7 @@ a:focus, a:hover {
     vertical-align: middle;
     float: none;
 }
+
+#city {
+    text-align: center;
+}
