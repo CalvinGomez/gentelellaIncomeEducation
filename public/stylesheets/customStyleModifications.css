@@ -30,6 +30,17 @@
 	height:100%;
 }
 
+#city{
+	font-family: "Helvetica Neue", Roboto, Arial, "Droid Sans", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.471
+}
+
+.tile_count {
+    margin-bottom: 0px;
+}
+
 /*general color and stuff*/
 body {
     color: #73879C;
