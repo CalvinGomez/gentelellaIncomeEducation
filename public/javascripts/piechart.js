@@ -13,13 +13,14 @@ function markerOnClickPieChart(e) {
                 "title": {
                     "text": "Education Level ",
                     "fontSize": 32,
-                    "font": "courier"
+                    "font": "Helvetica Neue",
+                    "color":  "#73879C"
                 },
                 "subtitle": {
                     "text": "This chart shows the education level in this area as % of overall population",
-                    "color": "#999999",
+                    "color": "#73879C",
                     "fontSize": 10,
-                    "font": "courier"
+                    "font-family": "Helvetica Neue"
                 },
                 "titleSubtitlePadding": 2
             },
