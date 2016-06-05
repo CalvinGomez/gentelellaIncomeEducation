@@ -1924,12 +1924,12 @@ span.right {
 
 .tile_count .tile_stats_count {
     border-bottom: 1px solid #D9DEE4;
-    padding: 0 10px 0 10px;
+    padding: 0 10px 0 20px;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
     position: relative;
-    width: 210px
+    width: 270px
 }
 
 @media (min-width: 992px) {
@@ -1958,7 +1958,8 @@ span.right {
 .tile_count .tile_stats_count .count {
     font-size: 30px;
     line-height: 40px;
-    font-weight: 600
+    font-weight: 600;
+    padding: 0 0 0 5px
 }
 
 @media (min-width: 768px) {
