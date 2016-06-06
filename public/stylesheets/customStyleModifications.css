@@ -41,6 +41,10 @@
     margin-bottom: 0px;
 }
 
+.tile_count .tile_stats_count {
+    width: 25%
+}
+
 /*general color and stuff*/
 body {
     color: #73879C;
