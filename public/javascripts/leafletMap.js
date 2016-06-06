@@ -149,8 +149,8 @@
                 $("#city").html(e.target.id);
             
                 $('html, body').animate({
-                    scrollTop: $("#chartContainer").offset().top
-                }, 2000);
+                    scrollTop: $("#city").offset().top
+                }, 1000);
 
                 console.log(e.target.id);
                 // markerOnClickBarChart(e.target.id);
