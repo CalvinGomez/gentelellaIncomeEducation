@@ -170,7 +170,7 @@ function markerOnClickBarChart(e) {
                 .attr("height", function (d, i) {
                     return Math.floor(d /n);
                 })
-                .attr("fill", "black")
+                .attr("fill", "#264B57")
                 .attr("x", function (d, i) {
                     return i * 71;  //Bar width of 20 plus 1 for padding
                 });
@@ -190,6 +190,7 @@ function markerOnClickBarChart(e) {
                 .attr("font-family", "sans-serif")
                 .attr("font-size", "11px")
                 .attr("fill", "white");
+                // .attr("align", "center");
 
 
             /*var margin = {top: 20, right: 30, bottom: 30, left: 40}
