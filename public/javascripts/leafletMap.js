@@ -147,6 +147,9 @@
                 $("#pieChart").empty();
                 $("#city").empty();
                 $("#city").html(e.target.id);
+                document.getElementById('chartContainer').scrollIntoView({
+                    behavior: "smooth"
+                });
 
                 console.log(e.target.id);
                 // markerOnClickBarChart(e.target.id);
