@@ -40,7 +40,7 @@ function markerOnClickPieChart(e) {
                     {
                         "label": "Less than 9th grade",
                         "value": first["Less than 9th grade (age>=25)"],
-                        "color": "#C7F6E6"
+                        "color": "#35C9BE"
                     },
                     {
                         "label": "9th through 12th grade, no diploma",
@@ -70,22 +70,22 @@ function markerOnClickPieChart(e) {
                     {
                         "label": "Bachelor's degree",
                         "value": first["Bachelor's degree (age>=25)"],
-                        "color": "#C7F6E6"
+                        "color": "#5ED4CB"
                     },
                     {
                         "label": "Master's degree",
                         "value": first["Master's degree (age>=25)"],
-                        "color": "#A2E5DA"
+                        "color": "#00A397"
                     },
                     {
                         "label": "College undergraduate ",
                         "value": first["College undergraduate -total enrollment (age>=3)"],
-                        "color": "#62D3AE"
+                        "color": "#00ADA0"
                     },
                     {
                         "label": "Graduate or professional school",
                         "value": first["Graduate or professional school -total enrollment (age>=3)"],
-                        "color": "#20AA7D"
+                        "color": "#10C3B6"
                     }
                 ]
             },
