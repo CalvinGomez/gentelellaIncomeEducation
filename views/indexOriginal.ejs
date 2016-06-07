@@ -73,13 +73,13 @@
               <div class="menu_section">
              <!--    <h3>General</h3> -->
                 <ul class="nav side-menu">
+                  <li><a id="step2" href="/index"><i class="fa fa-bar-chart-o"></i> View Regional Data</a>
+                  </li>
                   <li><a id="step1"><i class="fa fa-info-circle"></i> About Us <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
                       <li><a href="about">Our Goals</a></li>
                       <li><a href="navigation">How It Works</a></li>
                     </ul>
-                  </li>
-                  <li><a id="step2" href="/index"><i class="fa fa-bar-chart-o"></i> View Regional Data</a>
                   </li>
         <!--            <li><a><i class="fa fa-desktop"></i> UI Elements <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
@@ -306,18 +306,13 @@
             orphan: true,
             //element: "#mapContainer",
             title: "Welcome to Mint!",
-            content: "We'd like to give you a quick tour to get started."
+            content: "Here's a quick tour to get you started."
             
           },
           {
             element: "#step1",
-            title: "Learn about us here!",
-            content: "Click on the tab to drop down to more options."
-          },
-          {
-            element: "#step2",
-            title: "See our visualizations here!",
-            content: "Check out the different data we have displayed. Redirects back to dashboard."
+            title: "Learn more about us here!",
+            content: "The tab drops down for more information about our goals and visualizations."
           },
           {
             element: "#mapid",
@@ -330,6 +325,14 @@
             title: " ",
             content: "...And the visualizations will update according to which region you have chosen.",
             placement: "top"
+          },
+          {
+            // orphan: true,
+            element: ".sidebar-footer",
+            title: "And thats pretty much it!",
+            content: "If you need to restart the tour at any point, just click on the help icon.",
+            placement: "right"
+            
           }],
           onEnd: function (tour) {
             $('html, body').animate({
