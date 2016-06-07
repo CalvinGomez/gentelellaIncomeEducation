@@ -30,6 +30,11 @@
 	height:100%;
 }
 
+#aboutinfo{
+	font-weight: 200;
+	font-size: 20px;
+}
+
 #city{
 	font-family: "Helvetica Neue", Roboto, Arial, "Droid Sans", sans-serif;
     font-size: 30px;
