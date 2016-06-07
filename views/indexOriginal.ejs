@@ -330,7 +330,12 @@
             title: " ",
             content: "...And the visualizations will update according to which region you have chosen.",
             placement: "top"
-          }]
+          }],
+          onEnd: function (tour) {
+            $('html, body').animate({
+                    scrollTop: $(".top_nav").offset().top
+            }, 500);
+          }
 
           // backdrop: true,
           // backdropContainer: 'body',
