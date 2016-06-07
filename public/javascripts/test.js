@@ -83,7 +83,7 @@ function markerOnClickBarChart(e) {
                     })
                     .attr("font-family", "sans-serif")
                     .attr("font-size", "50px")
-                    .attr("fill", "black")
+                    .attr("fill", "red")
                     .attr("text-align", "center");
                 return;
 
