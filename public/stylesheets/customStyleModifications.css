@@ -142,3 +142,8 @@ a:focus, a:hover {
 #city {
     text-align: center;
 }
+
+#chartInfo {
+    margin-top: 20px;
+    text-align: center;
+}
