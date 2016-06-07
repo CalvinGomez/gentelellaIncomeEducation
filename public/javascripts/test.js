@@ -98,7 +98,7 @@ function markerOnClickBarChart(e) {
                 .attr("height", h+70+20)
                 .append("g")
                 .attr("transform",
-                    "translate( 0, 20)");
+                    "translate( 0, 5)");
 
 
             var testArray = [{"v":"<$15K"}, {"v":"$15k-$35k"}, {"v":"$35k-$50k"}, {"v":"$50k-$75k"},
