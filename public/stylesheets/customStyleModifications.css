@@ -45,6 +45,7 @@
     width: 25%
 }
 
+
 /*general color and stuff*/
 body {
     color: #73879C;
@@ -108,6 +109,36 @@ body {
 }
 .sidebar-footer a:hover {
     background: #495663;
+}
+
+#splash{
+	background: url("../images/Mint (2).png") no-repeat center center fixed; 
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+#splash-title{
+	position: relative;
+	text-align: center;
+	font-family: 'BacktoBlack', Back_to_black;
+	font-size: 200px;
+	color: #ffffff;
+	vertical-align: middle;
+	top: 20%;
+/*	padding-top: 5%;*/
+
+}
+
+#splash-subtitle{
+	position: relative;
+	text-align: center;
+	font-family: 'GeosansLight', Geosans_Light;
+	font-size: 40px;
+	color: #ffffff;
+	vertical-align: middle;
+	top: 20%;
 }
 
 

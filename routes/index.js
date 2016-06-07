@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('indexOriginal', { title: 'Express' });
+  res.render('splash', { title: 'Express' });
 });
 
 router.get('/about', function(req, res, next) {
@@ -18,7 +18,7 @@ router.get('/splash', function(req, res, next) {
   res.render('splash', { title: 'Express' });
 });
 
-router.get('/original', function(req, res, next) {
+router.get('/index', function(req, res, next) {
   res.render('indexOriginal');
 });
 

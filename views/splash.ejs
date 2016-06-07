@@ -23,26 +23,33 @@
 
     <!-- Custom Style Modifications -->
     <link rel="stylesheet" type="text/css" href="stylesheets/customStyleModifications.css">
+
+    <!-- jQuery -->
+   <script src="vendors/jquery/dist/jquery.min.js"></script>
+
 <script type="text/javascript">
 
-	window.onload=timeout;
-function timeout(){
-window.setTimeout("redirect()",5000)}
+// 	window.onload=timeout;
+// function timeout(){
+// window.setTimeout("redirect()",5000)}
 
-function redirect(){
-window.location="/"
-return}
+// function redirect(){
+// window.location="/"
+// return}
 
 </script>
 </head>
-<body onload="timeout()">
-	<h1>D3: Design, Development, and Documentation</h1>
-	<img src="../images/mastercard.png">
-<br>
-<form>
-<input type="button" value="Home Page" onClick="redirect()">
-</form>
+	<body id="splash">
+	<br>
+	<div id="splash-title" style="cursor:pointer">
+		Mint
+	</div>
 
-<p>Thank You For Visiting!</p>	
-</body>
+	<p id="splash-subtitle">Helping you decide your future</p>	
+<script>
+	$("#splash-title").click(function(){
+   $(location).attr('href', '/index')
+});
+	</script>
+	</body>
 </html>
