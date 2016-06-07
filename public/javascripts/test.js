@@ -31,7 +31,7 @@ function markerOnClickBarChart(e) {
 
     $("svg").remove();
     i++;
-    var w = 560;
+    var w = 480;
     var h = 300-70-20+150;
     var barPadding = 1;
     var svg = null;
@@ -76,14 +76,15 @@ function markerOnClickBarChart(e) {
                         return "No Data Available";
                     })
                     .attr("x", function (d, i) {
-                        return 200;  //Bar width of 20 plus 1 for padding
+                        return 80;  //Bar width of 20 plus 1 for padding
                     })
                     .attr("y", function (d) {
                         return 200;
                     })
                     .attr("font-family", "sans-serif")
                     .attr("font-size", "50px")
-                    .attr("fill", "black");
+                    .attr("fill", "black")
+                    .attr("text-align", "center");
                 return;
 
 

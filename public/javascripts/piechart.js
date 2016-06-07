@@ -7,6 +7,33 @@ function markerOnClickPieChart(e) {
         var updateObject=$.grep(json, function (item) {
             return item.Area == e;
         });
+        if (updateObject.length==0){
+            var w = 480;
+            var h = 300-70-20+150;
+            svg = d3.select("#pieChart")
+
+                .append("svg")
+                .attr("width", w)
+                .attr("height", h+70+20)
+                .append("text")
+                .text(function () {
+                    return "No Data Available";
+                })
+                .attr("x", function (d, i) {
+                    return 80;  //Bar width of 20 plus 1 for padding
+                })
+                .attr("y", function (d) {
+                    return 200;
+                })
+                .attr("font-family", "sans-serif")
+                .attr("font-size", "50px")
+                .attr("fill", "black")
+                .attr("text-align", "center");
+
+
+
+            return
+        }
         var first = updateObject[0];
         var pie = new d3pie("pieChart", {
             // "header": {
