@@ -9,21 +9,21 @@ function markerOnClickPieChart(e) {
         });
         var first = updateObject[0];
         var pie = new d3pie("pieChart", {
-            "header": {
-                "title": {
-                    "text": "Education Level ",
-                    "fontSize": 32,
-                    "font": "Helvetica Neue",
-                    "color":  "#73879C"
-                },
-                "subtitle": {
-                    "text": "This chart shows the education level in this area as % of overall population",
-                    "color": "#73879C",
-                    "fontSize": 10,
-                    "font-family": "Helvetica Neue"
-                },
-                "titleSubtitlePadding": 2
-            },
+            // "header": {
+            //     "title": {
+            //         "text": "Education Level ",
+            //         "fontSize": 32,
+            //         "font": "Helvetica Neue",
+            //         "color":  "#73879C"
+            //     },
+            //     "subtitle": {
+            //         "text": "This chart shows the education level in this area as % of overall population",
+            //         "color": "#73879C",
+            //         "fontSize": 10,
+            //         "font-family": "Helvetica Neue"
+            //     },
+            //     "titleSubtitlePadding": 2
+            // },
             "size": {
                 "canvasWidth": 590,
                 "pieInnerRadius": "30%",
