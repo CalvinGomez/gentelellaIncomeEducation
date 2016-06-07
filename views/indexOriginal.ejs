@@ -105,7 +105,7 @@
 
             <!-- /menu footer buttons -->
             <div class="sidebar-footer hidden-small">
-              <a data-toggle="tooltip" data-placement="top" title="Help">
+              <a data-toggle="tooltip" data-placement="top" title="Help" id="helpButton">
                 <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
               </a>
             <!--   <a data-toggle="tooltip" data-placement="top" title="FullScreen">
@@ -334,7 +334,7 @@
             title: " ",
             content: "...And the visualizations will update according to which region you have chosen.",
             placement: "top"
-          }],
+          }]
 
           // backdrop: true,
           // backdropContainer: 'body',
@@ -347,7 +347,10 @@
 
         // Start the tour
         tour.start();
+
+        $('#helpButton').click(function(event) {
+          tour.restart();
+        });
       </script>
-      <!--close instructional tour-->
   </body>
 </html>

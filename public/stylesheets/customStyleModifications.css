@@ -179,3 +179,7 @@ a:focus, a:hover {
     text-align: center;
     font-size: 20px;
 }
+
+#helpButton {
+    cursor: pointer;
+}
