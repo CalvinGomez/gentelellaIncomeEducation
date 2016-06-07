@@ -217,26 +217,33 @@
           <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
           <script src='https://d3js.org/d3.v3.min.js'></script>
 
-          <!-- The Bar Chart -->
+         
           <div class="row">
+
+            <!-- The Bar Chart -->
             <div class="col-md-6 col-sm-6 col-xs-12">
               <div class="x_panel tile" id="chartContainer">
-                  <div class="centerBlock vcenter">
-                <div id="barChart" class="vcenter"></div>
+                <div id="chartInfo">
+                  Income Levels
+                </div>
+                <div class="centerBlock vcenter">
+                  <div id="barChart" class="vcenter"></div>
                   <script src="javascripts/test.js"></script>
-              </div>
+                </div>
               </div>
             </div>
 
             <!-- The Pie Chart -->
             <div class="col-md-6 col-sm-6 col-xs-12">
               <div class="x_panel tile" id="chartContainer">
-                  <div id="sidebar">
-                      <div id="chart"></div>
-                      <div id="pieChart"></div>
-                      <script src="javascripts/piechart.js"></script>
-                  </div>
-
+                <div id="chartInfo">
+                  Education Level
+                </div>
+                <div id="sidebar">
+                    <div id="chart"></div>
+                    <div id="pieChart"></div>
+                    <script src="javascripts/piechart.js"></script>
+                </div>
               </div>
             </div>
           </div> 
